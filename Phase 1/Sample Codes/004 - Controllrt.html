@@ -1,0 +1,24 @@
+<html ng-app>
+	<head>
+		<script src= script/angular.min.js></script>
+	</head>
+	<title>Sample Date</title>
+
+<body ng-init="hourOfDay = 8">
+
+
+	<h1>Hello Angular</h1>
+
+	<p ng-if="hourOfDay < 12">Good Morning!</p>
+	<p ng-if="hourOfDay > 12">Good Evening!</p>
+<p>Hour of day is:  <span ng-bind="hourOfDay" /></p>
+or same thing using different way,
+<p>Hour of day is: {{hourOfDay}}</p>
+<script>
+	console.log(angular);
+</script>
+
+
+</body>
+
+</html>
