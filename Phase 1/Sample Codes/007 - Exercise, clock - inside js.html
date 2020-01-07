@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="clockAppn">
+
+<head>
+	<title>Clock App</title>
+	<script src= script/angular.min.js></script>
+	<script src= script/customfiles/007.js></script>
+</head>
+
+<body>
+<h1>Clock Application</h1>
+
+<div ng-controller="clockCtrlr">
+	Current time is: {{currentTime}}
+	<br />
+	<button ng-click="updateTime()">Update Time</button>
+</div>
+
+</body>
+
+</html>

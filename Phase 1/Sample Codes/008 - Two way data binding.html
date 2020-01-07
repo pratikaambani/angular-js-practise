@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="clockAppn">
+
+<head>
+	<title>Clock App</title>
+	<script src= script/angular.min.js></script>
+	<script src= script/customfiles/007.js></script>
+</head>
+
+<body>
+<h1>Two way data binding</h1>
+
+<div ng-controller="clockCtrlr">
+
+<p>Please enter your name
+<input type="text" ng-model="uName">
+</p>
+<p>Your Name is: {{uName}}</p>
+
+</div>
+
+</body>
+
+</html>
