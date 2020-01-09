@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="calcApplication">
+
+<head>
+	<title>Clock App</title>
+	<script src= script/angular.min.js></script>
+	<script src= script/customfiles/007.js></script>
+</head>
+
+<body>
+<h1>Calculator Application</h1>
+
+<div ng-controller="calculatorController as calcCtrlr">
+	<input type="text" ng-model="calcCtrlr.firstIP"></input>
+	<span ng-bind="calcCtrlr.selectedOperation"></span>
+	<input type="text" ng-model="calcCtrlr.secondIP"></input>
+	<button ng-click="calcCtrlr.computeResult()">=</button>
+	<span ng-bind="calcCtrlr.resultVal"></span>
+
+
+	<p>
+		Choose operation:
+			<button ng-click="calcCtrlr.btnClicked('+')">+</button>		
+			<button ng-click="calcCtrlr.btnClicked('-')">-</button>		
+			<button ng-click="calcCtrlr.btnClicked('*')">*</button>		
+			<button ng-click="calcCtrlr.btnClicked('/')">/</button>		
+	</p>
+
+	{{calcCtrlr.firstIP}} 
+	{{calcCtrlr.secondIP}}
+
+
+</div>
+
+</body>
+
+</html>

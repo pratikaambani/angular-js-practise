@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="moreDirectivesApp">
+
+<head>
+	<title>Clock App</title>
+	<script src= script/angular.min.js></script>
+	<script src= script/customfiles/007.js></script>
+</head>
+
+<body>
+<h1>Calculator Application</h1>
+
+<div ng-controller="moreDirectiveController as dirCtrl">
+<input type="checkbox" ng-model="dirCtrl.checked">
+<p ng-if="dirCtrl.checked">Show some content one</p>
+<p ng-hide="dirCtrl.checked">Show some content two</p>
+
+<div ng-repeat="i in dirCtrl.myList">
+ 	<p>{{i}} Pratik Ambani</p>
+</div>
+
+<div ng-repeat="obj in dirCtrl.detailsOfMembers">
+<p>No.: {{$index + 1}}. Name: <b>{{obj.name}}</b> and age: <b>{{obj.age}}</b></p>
+{{$first}}
+
+</div>
+
+
+</div>
+
+</body>
+
+</html>

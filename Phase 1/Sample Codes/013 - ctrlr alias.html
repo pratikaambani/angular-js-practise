@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="nestedController1">
+
+<head>
+	<title>Clock App</title>
+	<script src= script/angular.min.js></script>
+	<script src= script/customfiles/007.js></script>
+</head>
+
+<body>
+<h1>nested controllers</h1>
+
+<div ng-controller="ctrl1 as c1">
+<p ng-bind="c1.testProperty"></p>
+<div ng-controller="ctrl2 as c2">
+<p ng-bind="c2.testProperty"></p>
+</div>
+</div>
+
+
+</body>
+
+</html>
