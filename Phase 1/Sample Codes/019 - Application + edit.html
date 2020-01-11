@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+
+<head>
+	<title>Adding external Modules</title>
+	<script src= script/angular.min.js></script>
+	<script src= script/customfiles/007.js></script>
+</head>
+
+<body>
+<h1>Adding external Modules</h1>
+
+<div ng-controller="someController as ctrl">
+	<div>
+		Add a todo: 
+		<input type="text" ng-model="ctrl.newTodo">
+		<button ng-click="ctrl.addNewTodo()">Add</button>
+		<div>
+			<p>My ToDos:</p>
+			<button ng-hide="ctrl.editMode" ng-click="triggerEditFun()">Edit</button>
+			<button ng-show="ctrl.editMode" ng-click="triggerEditFun()">Edit</button>
+			<ol>
+				<li ng-repeat="todo1 in ctrl.todos">
+					<span ng-hide="ctrl.editMode" ng-bind="todo1"></span>
+					<input ng-model="todo1" type="text" ng-show="ctrl.editMode"></input>
+				</li>
+			</ol>
+		</div>	
+	<!-- </div> -->
+</div>
+
+</body>
+
+</html>

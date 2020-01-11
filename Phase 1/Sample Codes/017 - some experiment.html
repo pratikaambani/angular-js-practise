@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="externalModule">
+
+<head>
+	<title>Adding external Modules</title>
+	<script src= script/angular.min.js></script>
+	<script src= script/customfiles/007.js></script>
+    <script src="http://mbenford.github.io/ngTagsInput/js/ng-tags-input.min.js"></script>
+    <link rel="stylesheet" href="http://mbenford.github.io/ngTagsInput/css/ng-tags-input.min.css" />
+</head>
+
+<body>
+<h1>Adding external Modules</h1>
+
+<div ng-controller="tagsDemoCtrl as ctrl">
+	<tags-input ng-model="ctrl.tags"></tags-input>
+</div>
+
+</body>
+
+</html>
