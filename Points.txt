@@ -1,0 +1,43 @@
+ng-app
+auto bootstrap angular appn
+designates root element of application
+
+ng-init: lets us initialize something
+eveluate expressions
+Don't use it
+
+ng-if
+removes/recreates portion of tree based on application
+
+<span>{{userName}}</span> is same as <span ng-bind="userName"></span>
+
+
+
+Global functions are not recommanded
+
+
+angular.module: gloabal place for creating, registering, and retrieving angular modules
+
+Module is collection of things like controllers
+
+controller has to be registered with a module
+
+
+
+function Main() {
+	//instead of below line, add scope in Main(scope)
+	var scope; //hey angular, get me that scope
+	scope.myName = "Pratik Ambani";
+	console.log("Main() called");
+}
+
+
+
+ng-click
+
+two way data binding with ng-model
+
+
+
+on change: ng-change
+

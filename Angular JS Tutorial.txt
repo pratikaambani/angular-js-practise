@@ -1,0 +1,9 @@
+problem with normal code is we repetitively upudate Dom, which is not preferred way
+
+purpose: when html changes, javascript should get changed and viceversa
+
+normal: MVC
+Angular: Model(data:js), View(ppl c:html), Whatever(call it controller, view model, everything fine)
+
+
+HTML:Custom Attributes
